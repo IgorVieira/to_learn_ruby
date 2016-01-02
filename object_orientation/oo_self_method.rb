@@ -3,25 +3,18 @@
 # get a particular element or feature present within the same class
 
 class Person
- def self.count
-  @count ||= 0 
- end
-
- def self.count=(increment)
-  @count = increment	
- end
-
- def initialize(name)
-   @name = name
-   self.class.count +=1
- end
-
- def name 
-  @name
- end	
-
+  def self.name
+   @name = "Heisenberg"
+  end 
+  
+  def say_my_name
+    puts self.class.name
+  end	
+  
+  
 end
 
+p = Person.new
 
-person = Person.new("Woody Allen")
-puts Person.count
+puts "Say my name!"
+p.say_my_name
