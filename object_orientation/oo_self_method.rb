@@ -3,9 +3,10 @@
 # get a particular element or feature present within the same class
 
 class Person
-  def self.name
-   @name = "Heisenberg"
-  end 
+ 
+   def self.name
+    "Heisenberg"
+   end
   
   def say_my_name
     puts self.class.name
