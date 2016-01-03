@@ -1,10 +1,10 @@
 class Restaurant
-   def qualify(notice, msg="Soo thanks!")
-	message  = "The notice about this restaurant is #{notice}.\n"
+   def qualify(note, msg="Soo thanks!")
+	message  = "The note about this restaurant is #{note}.\n"
 
-      if notice > 9 && notice <= 10
+      if note > 9 && note <= 10
         puts message << msg
-      elsif notice >= 7 && notice <= 8.9
+      elsif note >= 7 && note <= 8.9
 	msg = "Thanks!"
 	puts message << msg
       else
